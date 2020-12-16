@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h5>字体大小大于等于20像素,要不然识别不准</h5>
+        <div>
+            <img id="imgDis" style="width: 100px;">
+            <canvas id="canvasDis" style="display:none"></canvas>
+        </div>
+        <div>
+            <input id="chooseImg" type="file">
+            <!-- <button id="changeImg" style="display: none;">转换</button> -->
+            <button id="distinguish">识别</button>
+        </div>
+    </div>
+</body>
+<!-- 引入单个数字识别方法 -->
+<script src="./method.js"></script>
+<!-- 引入分割数字方法 -->
+<script src="./division.js"></script>
+<!-- 猪流程 -->
+<script src="./index.js"></script>
+<script>
+
+</script>
+</html>

@@ -9,7 +9,7 @@
 
 <body>
     <div>
-        <h5>字体大小大于等于20像素,要不然识别不准</h5>
+        <!-- <h5>字体大小大于等于20像素,要不然识别不准</h5> -->
         <div>
             <img id="imgDis" style="width: 100px;">
             <canvas id="canvasDis" style="display:none"></canvas>
@@ -18,6 +18,25 @@
             <input id="chooseImg" type="file">
             <!-- <button id="changeImg" style="display: none;">转换</button> -->
             <button id="distinguish">识别</button>
+        </div>
+        <div>
+            <span>result:</span>
+            <span id="result"></span>
+        </div>
+        <div style="padding:5em 0 0 0">
+            <div>测试使用图片(可右键保存至本地测试)</div>
+            <div style="border:1px solid black">
+                <img src="./20.jpg">
+            </div>
+            <div style="border:1px solid black">
+                <img src="./1608083012(1).jpg">
+            </div>
+            <div style="border:1px solid black">
+                <img src="./1607390421(1).jpg">
+            </div>
+            <div style="border:1px solid black">
+                <img src="./1608513782(1).jpg">
+            </div>
         </div>
     </div>
 </body>

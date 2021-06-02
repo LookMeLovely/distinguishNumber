@@ -86,15 +86,15 @@ distinguishBtn.onclick = function () {
     }
     // 拆分的数字
     let numArr
-    // if (whitePx.length > blackPx.length) {
-    //     //拆分数字
-    //     numArr = divisionNum(ctx, blackPx, ((canvasTag.width) * 4))
-    // } else {
-    //     //拆分数字
-    //     numArr = divisionNum(ctx, whitePx, ((canvasTag.width) * 4))
-    // }
+    if (whitePx.length > blackPx.length) {
+        //拆分数字
+        numArr = divisionNum(ctx, blackPx, ((canvasTag.width) * 4))
+    } else {
+        //拆分数字
+        numArr = divisionNum(ctx, whitePx, ((canvasTag.width) * 4))
+    }
     //拆分数字
-    numArr = divisionNum(ctx, blackPx, ((canvasTag.width) * 4))
+    // numArr = divisionNum(ctx, blackPx, ((canvasTag.width) * 4))
     let result = ''
     numArr.forEach(item => {
         // 将拆分完的数字循环调用识别数字边距位置方法
@@ -102,6 +102,7 @@ distinguishBtn.onclick = function () {
 
     })
     console.log(result)
+    document.querySelector('#result').innerHTML=result
 }
 // 获取图片的边距位置,调用识别方法
 function getPositionPoint(forArr) {
